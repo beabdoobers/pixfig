@@ -1,5 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import viniImg from "@/assets/images/vini.png";
+import kilianImg from "@/assets/images/kilian.png";
+import yamalImg from "@/assets/images/yamal.png";
+import messiImg from "@/assets/images/messi.png";
+import crisImg from "@/assets/images/cris.png";
+import bellinghamImg from "@/assets/images/bellingham.jpeg";
+import uruImg from "@/assets/images/uru.png";
 import "../styles/landing.css";
 
 export const Route = createFileRoute("/")({
@@ -156,7 +163,7 @@ function Hero() {
           <div className="card-fig fig1">
             <div className="fig-inner">
               <div className="fig-flag" style={{ background: "#009c3b" }} />
-              <img src="/images/vini.png" alt="Jogador" className="player-image"/>
+              <img src={viniImg} alt="Jogador" className="player-image"/>
               <div className="fig-name">BRASIL</div>
               <div className="fig-num">#10</div>
             </div>
@@ -164,7 +171,7 @@ function Hero() {
           <div className="card-fig fig2">
             <div className="fig-inner">
               <div className="fig-flag" style={{ background: "#0055A4" }} />
-              <img src="/images/kilian.png" alt="Jogador" className="player-image"/>
+              <img src={kilianImg} alt="Jogador" className="player-image"/>
               <div className="fig-name">FRANÇA</div>
               <div className="fig-num">#7</div>
             </div>
@@ -172,7 +179,7 @@ function Hero() {
           <div className="card-fig fig3">
             <div className="fig-inner">
               <div className="fig-flag" style={{ background: "#C60B1E" }} />
-              <img src="/images/yamal.png" alt="Jogador" className="player-image"/>
+              <img src={yamalImg} alt="Jogador" className="player-image"/>
               <div className="fig-name">ESPANHA</div>
               <div className="fig-num">#9</div>
             </div>
@@ -212,13 +219,13 @@ function Benefits() {
 }
 
 const stickers = [
-  { c: "BRASIL", n: "10", bg: "#009c3b", txt: "#FEDF00", img: "/images/vini.png" },
-  { c: "ARGENTINA", n: "10", bg: "#74ACDF", txt: "#FFFFFF", img: "/images/messi.png" },
-  { c: "FRANÇA", n: "7", bg: "#0055A4", txt: "#FFFFFF", img: "/images/kilian.png" },
-  { c: "PORTUGAL", n: "7", bg: "#006600", txt: "#FF0000", img: "/images/cris.png" },
-  { c: "INGLATERRA", n: "9", bg: "#FFFFFF", txt: "#C8102E", img: "/images/bellingham.jpeg" },
-  { c: "ESPANHA", n: "9", bg: "#C60B1E", txt: "#FFC400", img: "/images/yamal.png" },
-  { c: "URUGUAI", n: "21", bg: "#5CBFEB", txt: "#FFFFFF", img: "/images/uru.png" },
+  { c: "BRASIL", n: "10", bg: "#009c3b", txt: "#FEDF00", img: viniImg },
+  { c: "ARGENTINA", n: "10", bg: "#74ACDF", txt: "#FFFFFF", img: messiImg },
+  { c: "FRANÇA", n: "7", bg: "#0055A4", txt: "#FFFFFF", img: kilianImg },
+  { c: "PORTUGAL", n: "7", bg: "#006600", txt: "#FF0000", img: crisImg },
+  { c: "INGLATERRA", n: "9", bg: "#FFFFFF", txt: "#C8102E", img: bellinghamImg },
+  { c: "ESPANHA", n: "9", bg: "#C60B1E", txt: "#FFC400", img: yamalImg },
+  { c: "URUGUAI", n: "21", bg: "#5CBFEB", txt: "#FFFFFF", img: uruImg },
 ];
 
 function Preview() {
